@@ -1,0 +1,105 @@
+body{
+    background-color: #ffe7d2;
+}
+
+h1{
+    color: black;
+    text-align: center;
+}
+
+h2{
+    color: red;
+    text-align: center;
+}
+
+.container {
+display: flex;
+justify-content: space-between;
+}
+
+button {
+    background-color: #f24d4d;
+    color: #fff;
+    padding: 10px 25px;
+    border: none;
+    cursor: pointer;
+    border: 20px;
+    border-radius: 50px;
+}
+
+p{
+    color: black;
+}
+
+img {
+    width: 500px;
+    height: 500px;
+    display: block;
+    margin: 0 auto;
+}
+
+.fundacao-sp {
+    text-align: center;
+    font-style: italic;
+    color: gray;
+}
+
+.fundacao-sp img{
+    width: 500px;
+    height: 400px;
+    display: block;
+}
+
+.paulistano {
+    text-align: center;
+    font-style: italic;
+    color: gray;
+}
+
+.paulistano img{
+    width: 800px;
+    height: auto;
+    display: block;    
+}
+
+.genealogia-sp img{
+    width: 50%;
+    height: 50%;
+    display: block;
+}
+
+.chacara-sp {
+    text-align: center;
+    font-style: italic;
+    color: gray;
+}
+
+.chacara-sp img{
+    width: 800px;
+    height: 500px;
+    display: block;
+}
+
+.jornais {
+    text-align: center;
+    font-style: italic;
+    color: gray;
+}
+
+.jornais img{
+    width: 500px;
+    height: auto;
+    display: block;
+}
+
+.apea img {
+    width: 500px;
+    height: auto;
+    display: block;
+}
+
+.escudo img{
+    width: 600px;
+    height: auto;
+    display: block;
+}

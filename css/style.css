@@ -1,0 +1,42 @@
+body{
+    background-color: #1f2120;
+    background-image: url("../img/futebol1.avif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+}
+
+h1{
+    color: white;
+    text-align: center;
+}
+
+h2{
+    color: white;
+    text-align: center;
+}
+
+.container { 
+    margin: 25px 0 0 200px;
+    width: 70%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.container img {
+    width: 70%;
+    height: 70%;
+    object-fit:cover;
+    border-radius: 100px;
+    border: 50px solid rgba(255, 255, 255, 0.0);
+    transition: all ease-in-out 0.5s;
+}
+
+.container img:hover {
+    width: 90%;
+}
+
