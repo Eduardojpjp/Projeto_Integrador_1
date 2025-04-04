@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/santos.css">
     </head>
     <style>
         body {
@@ -28,6 +27,21 @@
 
         .imagem img {
             display: flex;
+        }
+
+        .container {
+        display: flex;
+        justify-content: space-between;
+        }
+
+        button {
+            background-color: #ffd700;
+            color: gray;
+            padding: 10px 25px;
+            border: none;
+            cursor: pointer;
+            border: 20px;
+            border-radius: 50px;
         }
     </style>
 
@@ -111,6 +125,12 @@
     <img src="./img/santos/FundacaoSantos.jpg">
     <img src="./img/santos/JogoTreino.jpg">
     <img src="./img/santos/primeiroJogo.jpg">
-</div>
+    </div>
+    <div class="container">
+        <button onclick="window.location.href='index.html'">Voltar</button>
+        <button onclick="window.location.href='saopaulo.html'">São Paulo</button>
+        <button onclick="window.location.href='corinthians.html'">Corinthians</button>
+        <button onclick="window.location.href='palmeiras.html'">Palmeiras</button>
+    </div>
 </body>
 </html>

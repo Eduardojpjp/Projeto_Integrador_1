@@ -1,1 +1,115 @@
-Palmeiras
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 100px;
+            background-color: white;
+            color: #000000;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        body.dark-mode {
+        background-color:#006400;
+        color: #000000;
+        }
+
+        .toggle-btn {
+        background-color: #98fb98;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        margin-top: 20px;
+        }
+
+        .imagem img {
+            display: flex;
+        }
+
+        .container {
+        display: flex;
+        justify-content: space-between;
+        }
+
+        button {
+            background-color: #98fb98;
+            color: gray;
+            padding: 10px 25px;
+            border: none;
+            cursor: pointer;
+            border: 20px;
+            border-radius: 50px;
+        }
+    </style>
+
+<button class="toggle-btn" onclick="toggleDarkMode()">Alternar Modo</button>
+
+<script>
+    function toggleDarkMode() {
+        // Alterna a classe "dark-mode" no body
+        document.body.classList.toggle("dark-mode");
+
+        // Salva a preferência do usuário no localStorage
+        if (document.body.classList.contains("dark-mode")) {
+            localStorage.setItem("darkMode", "enabled");
+        } else {
+            localStorage.setItem("darkMode", "disabled");
+        }
+    }
+
+    // Verifica se o usuário já ativou o modo escuro antes
+    if (localStorage.getItem("darkMode") === "enabled") {
+        document.body.classList.add("dark-mode");
+    }
+</script>
+    <header>
+        <h1>
+            Fundação Palmeiras
+        </h1>
+    </header>
+    
+</head>
+<body>
+    <main>
+        <section>
+            <p>
+                Fundado em 1914 com o intuito de agregar e fortalecer a numerosa comunidade italiana de São Paulo, o Palestra Italia, atual Sociedade Esportiva Palmeiras, rapidamente rompeu fronteiras e se tornou uma potência nacional. Hoje, são cerca de 20 milhões de apaixonados espalhados pelo país e pelo mundo. Pessoas de todas as classes econômicas e sociais, de todos os credos e etnias, unidas pelo amor ao verde, pelo orgulho e a honra de torcer pelo Maior Campeão do Brasil e Tricampeão da América.
+            </p>
+        </section>
+        <section>
+            <p>
+                Vanguardista e pioneiro, o Palestra encarou o establishment da capital paulista nas primeiras décadas do século passado, popularizou o futebol inserindo o elemento imigrante a um esporte até então aristocrata, ousou ao construir o primeiro estádio de concreto da cidade e ajudou a impulsionar o fim do amadorismo no futebol brasileiro. Sagrou-se o primeiro campeão estadual e o primeiro campeão interestadual da era profissional no Brasil. Resiliente, superou o preconceito e o oportunismo de falsos nacionalistas e, mesmo sendo obrigado a mudar de nome, já como Palmeiras, tornou-se o primeiro campeão mundial da história e o primeiro a vencer uma partida representando a Seleção Brasileira com a sua mítica camisa amarela. Deu aulas de futebol com as Academias e se consagrou como Campeão do Século com o título da Copa Libertadores de 1999.
+            </p>
+        </section>
+        <section>
+            <p>
+                Bicampeão sul-americano em 2020 e 2021 e com sete títulos nacionais nas últimas nove temporadas, o Alviverde Imponente é referência dentro e fora dos gramados, dispondo de estruturas modernas como o Allianz Parque, principal arena multiuso do país, a Academia de Futebol, centro de treinamento do elenco profissional que abrange um moderno complexo técnico e hoteleiro e um superequipado Núcleo de Saúde e Performance, e o Centro de Formação de Atletas, onde os jovens têm espaço exclusivo de treino, acomodação, refeições e acompanhamentos médico, psicológico, social e educacional.
+            </p>
+        </section>
+        <section>
+            <p>
+                O clube colhe atualmente os frutos de uma administração profissional, eficaz e transparente, responsável pelo crescimento no valor da marca de R$ R$ 576,1 milhões em 2014 para R$ 3,956 bilhões em 2024 e pela elevação das receitas de pouco mais de R$ 200 milhões na temporada em que comemorou seu centenário para além de R$ 1,2 bilhão em 2024. Essa consolidação como o segundo clube mais valioso e de maior faturamento das Américas é resultado da diversificação das fontes de renda. Com uma das maiores arrecadações de bilheteria do Brasil e apoiado por um dos maiores patrocínios máster do continente, o Palmeiras fatura ainda com o programa de sócio-torcedor Avanti, com direitos de transmissão das partidas, negociações de atletas, mensalidades do clube social, parceiros e eventos diversos, além da comercialização de mais de 800 rótulos de produtos licenciados, das vendas na Palmeiras Store e das Escolas Oficiais de Futebol.
+            </p>
+        </section>
+        <section>
+            <p>
+                Maior reduto musical da cultura negra em São Paulo durante os anos 70 e 80 por abrigar a Chic Show, principal festival de black music da história do país, a instituição é exemplo ainda em cidadania, participando de amistosos e campanhas beneficentes ao longo dos anos e sendo condecorado duas vezes pela ONU (em 1918, por combater a Gripe Espanhola em sua sede, e em 1968, pelas apresentações solidárias do Periquitos em Revista). Durante a pandemia da Covid-19, o clube manteve os empregos e os salários de todos os seus colaboradores mesmo em tempos de estádios fechados e crise econômica, preservando os valores de família e congregação semeados pelos seus idealizadores e cultivados até hoje por todos os palestrinos.
+            </p>
+        </section>
+        <section>
+            <p>
+                Atualmente, por meio do programa Por Um Futuro Mais Verde, as principais bandeiras da instituição são a inclusão social, o estímulo à vida saudável, a preservação do meio ambiente e o desenvolvimento sustentável.
+            </p>
+        </section>
+    </main>
+    <div class="container">
+        <button onclick="window.location.href='index.html'">Voltar</button>
+        <button onclick="window.location.href='santos.html'">Santos</button>
+        <button onclick="window.location.href='saopaulohtml'">São Paulo</button>
+        <button onclick="window.location.href='corinthians.html'">Corinthians</button>
+    </div>
+</body>
+</html>
