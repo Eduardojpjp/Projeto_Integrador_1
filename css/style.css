@@ -40,3 +40,15 @@ h2{
     width: 90%;
 }
 
+button {
+    position: absolute;
+    top: 70%;
+    left: 45%;
+    background-color: green;
+    color: black;
+    padding: 25px 50px;
+    border: none;
+    cursor: pointer;
+    border: 20px;
+    border-radius: 50px;
+}

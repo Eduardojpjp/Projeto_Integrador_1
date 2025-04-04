@@ -7,7 +7,26 @@
     <title>São Paulo FC</title>
 </head>
 <body>
+    <button class="toggle-btn" onclick="toggleDarkMode()">Alternar Modo</button>
 
+    <script>
+        function toggleDarkMode() {
+            // Alterna a classe "dark-mode" no body
+            document.body.classList.toggle("dark-mode");
+
+            // Salva a preferência do usuário no localStorage
+            if (document.body.classList.contains("dark-mode")) {
+                localStorage.setItem("darkMode", "enabled");
+            } else {
+                localStorage.setItem("darkMode", "disabled");
+            }
+        }
+
+        // Verifica se o usuário já ativou o modo escuro antes
+        if (localStorage.getItem("darkMode") === "enabled") {
+            document.body.classList.add("dark-mode");
+        }
+    </script>
 <main>
     <section>
         <h2>95 ANOS SÃO PAULO FUTEBOL CLUBE</h2>
@@ -121,5 +140,7 @@
     <button onclick="window.location.href='corinthians.html'">Corinthians</button>
     <button onclick="window.location.href='palmeiras.html'">Palmeiras</button>
 </div>
+
+
 </body>
 </html>
